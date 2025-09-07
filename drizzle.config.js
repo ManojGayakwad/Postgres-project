@@ -5,7 +5,7 @@ const config = defineConfig({
   schema: './drizzle/schema.js',
   dialect: 'postgresql',
   dbCredentials: {
-    url:'postgres://postgres:admin@localhost:5432/mydb',
+    url: process.env.DATABASE_URL,
   },
 });
 
